@@ -3,8 +3,12 @@ package com.hajimalung;
 public class Alien {
 
     String name = "Unknown";
-
     private Laptop lapObj;
+
+    public Alien(String name) {
+        System.out.println("Creating Alien " + name);
+        this.name = name;
+    }
 
     public Laptop getLapObj() {
         return lapObj;

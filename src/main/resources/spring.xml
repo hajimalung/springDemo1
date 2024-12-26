@@ -6,12 +6,13 @@
 
 <!--<bean id="alien" class="com.hajimalung.Alien" scope="prototype">    -->
     <bean id="alien" class="com.hajimalung.Alien">
-        <property name="age" value="30">
-        </property>
-        <property name="lapObj" ref="laptop">
-        </property>
+        <constructor-arg value="Hajimalung" />
+        <property name="age" value="30" />
+        <property name="lapObj" ref="laptop" />
     </bean>
 
     <bean id="laptop" class="com.hajimalung.Laptop">
+        <constructor-arg value="sony" />
+        <constructor-arg value="vaio" />
     </bean>
 </beans>
