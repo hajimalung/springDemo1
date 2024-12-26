@@ -18,13 +18,13 @@ public class App
         Alien obj = (Alien) context.getBean("alien");
         obj.name = "Hajimalung";
 
-        Alien obj2 = (Alien) context.getBean("alien");
-        obj2.name = "Daanish";
+//        Alien obj2 = (Alien) context.getBean("alien");
+//        obj2.name = "Daanish";
 
         Laptop laptop = (Laptop) context.getBean("laptop");
         laptop.openIDE();
 
         obj.code();
-        obj2.code();
+//        obj2.code();
     }
 }
