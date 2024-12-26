@@ -14,7 +14,17 @@ public class App
         System.out.println( "Hello World!" );
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+
         Alien obj = (Alien) context.getBean("alien");
+        obj.name = "Hajimalung";
+
+        Alien obj2 = (Alien) context.getBean("alien");
+        obj2.name = "Daanish";
+
+        Laptop laptop = (Laptop) context.getBean("laptop");
+        laptop.openIDE();
+
         obj.code();
+        obj2.code();
     }
 }
