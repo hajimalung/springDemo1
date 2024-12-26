@@ -1,5 +1,8 @@
 package com.hajimalung;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * Hello world!
  *
@@ -10,7 +13,8 @@ public class App
     {
         System.out.println( "Hello World!" );
 
-        Alien obj = new Alien();
+        ApplicationContext context = new ClassPathXmlApplicationContext();
+        Alien obj = (Alien) context.getBean("alien");
         obj.code();
     }
 }
