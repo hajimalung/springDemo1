@@ -7,4 +7,7 @@ public class Laptop {
     public void openIDE(){
         System.out.println("Open IDE");
     }
+    public void compileCode(){
+        System.out.println("Compiling code");
+    }
 }

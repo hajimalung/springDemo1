@@ -1,7 +1,18 @@
 package com.hajimalung;
 
 public class Alien {
+
     String name = "Unknown";
+
+    private Laptop lapObj;
+
+    public Laptop getLapObj() {
+        return lapObj;
+    }
+
+    public void setLapObj(Laptop lapObj) {
+        this.lapObj = lapObj;
+    }
 
     private int age;
 
@@ -19,6 +30,8 @@ public class Alien {
     }
 
     public void code(){
+        lapObj.openIDE();
         System.out.println(this.name + " is coding");
+        lapObj.compileCode();
     }
 }

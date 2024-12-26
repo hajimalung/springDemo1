@@ -8,6 +8,8 @@
     <bean id="alien" class="com.hajimalung.Alien">
         <property name="age" value="30">
         </property>
+        <property name="lapObj" ref="laptop">
+        </property>
     </bean>
 
     <bean id="laptop" class="com.hajimalung.Laptop">

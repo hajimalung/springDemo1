@@ -21,9 +21,6 @@ public class App
 //        Alien obj2 = (Alien) context.getBean("alien");
 //        obj2.name = "Daanish";
 
-        Laptop laptop = (Laptop) context.getBean("laptop");
-        laptop.openIDE();
-
         obj.code();
 //        obj2.code();
     }
