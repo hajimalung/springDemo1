@@ -5,18 +5,21 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--<bean id="alien" class="com.hajimalung.Alien" scope="prototype">    -->
-    <bean id="alien" class="com.hajimalung.Alien">
+    <bean id="alien" class="com.hajimalung.Alien" autowire="byName">
         <constructor-arg value="Hajimalung" />
         <property name="age" value="30" />
-        <property name="lapObj" ref="laptop" />
+<!--        <property name="com" ref="laptop" />-->
     </bean>
 
-    <bean id="laptop" class="com.hajimalung.Laptop">
+    <bean id="com1" class="com.hajimalung.Laptop">
 <!--        in below sequesce works-->
 <!--        <constructor-arg value="sony" />-->
 <!--        <constructor-arg value="vaio" />-->
 
             <constructor-arg name="brand" value="sony" />
             <constructor-arg name="model" value="vaio" />
+    </bean>
+
+    <bean id="com" class="com.hajimalung.Desktop">
     </bean>
 </beans>

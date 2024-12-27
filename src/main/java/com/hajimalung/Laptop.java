@@ -2,7 +2,7 @@ package com.hajimalung;
 
 import java.beans.ConstructorProperties;
 
-public class Laptop {
+public class Laptop implements ComputingMachine {
     private String brand;
     private String model;
 
@@ -16,9 +16,11 @@ public class Laptop {
         this.model = model;
     }
 
+    @Override
     public void openIDE(){
         System.out.println("Opening IDE on "+this.brand + " laptop");
     }
+    @Override
     public void compileCode(){
         System.out.println("Compiling code on "+this.model+" modal laptop");
     }

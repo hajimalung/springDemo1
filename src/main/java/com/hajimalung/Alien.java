@@ -3,19 +3,19 @@ package com.hajimalung;
 public class Alien {
 
     String name = "Unknown";
-    private Laptop lapObj;
+    private ComputingMachine com;
 
     public Alien(String name) {
         System.out.println("Creating Alien " + name);
         this.name = name;
     }
 
-    public Laptop getLapObj() {
-        return lapObj;
+    public ComputingMachine getCom() {
+        return com;
     }
 
-    public void setLapObj(Laptop lapObj) {
-        this.lapObj = lapObj;
+    public void setCom(ComputingMachine com) {
+        this.com = com;
     }
 
     private int age;
@@ -34,8 +34,8 @@ public class Alien {
     }
 
     public void code(){
-        lapObj.openIDE();
+        com.openIDE();
         System.out.println(this.name + " is coding");
-        lapObj.compileCode();
+        com.compileCode();
     }
 }
