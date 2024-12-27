@@ -10,7 +10,7 @@ public class Laptop {
         System.out.println("Laptop created");
     }
 
-    @ConstructorProperties({ "brand", "model1" })
+    @ConstructorProperties({ "brand", "model" })
     public Laptop(String brand, String model) {
         this.brand = brand;
         this.model = model;

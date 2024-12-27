@@ -17,6 +17,6 @@
 <!--        <constructor-arg value="vaio" />-->
 
             <constructor-arg name="brand" value="sony" />
-            <constructor-arg name="model1" value="vaio" />
+            <constructor-arg name="model" value="vaio" />
     </bean>
 </beans>
